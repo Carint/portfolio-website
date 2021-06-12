@@ -4,6 +4,10 @@
 .menu {
     @include gradient;
 
+    .navbar-brand {
+        font-family: "Poppins", sans-serif;
+    }
+
     li {
         padding: 0 0.7rem;
 
