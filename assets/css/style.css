@@ -10859,6 +10859,10 @@ textarea.form-control-lg {
   filter: grayscale(120);
 }
 
+.faq .container h1 {
+  margin-top: 1.5rem;
+}
+
 .intro-section {
   background: linear-gradient(to right, rgba(34, 20, 114, 0.95), rgba(99, 102, 243, 0.95));
   padding: 10rem 0 0 0;
@@ -10915,9 +10919,65 @@ textarea.form-control-lg {
   font-weight: 600;
 }
 
+.portfolio {
+  padding: 4rem 0;
+}
+.portfolio button {
+  text-transform: capitalize;
+}
+
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  max-height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border-top: 0.5rem solid #6366f3;
+}
+.portfolio-box img {
+  width: 100%;
+}
+.portfolio-box .portfolio-info {
+  background-color: rgba(34, 20, 114, 0.75);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.portfolio-box .portfolio-info .caption {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.portfolio-box .portfolio-info .caption h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+}
+.portfolio-box:hover img {
+  transform: scale(1.5);
+  transition-duration: 1000ms;
+  transition-property: all;
+}
+.portfolio-box:hover .portfolio-info {
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 1000ms;
+  transition-property: all;
+}
+
 .services {
   position: relative;
   padding: 1rem 0;
+}
+.services .container .row {
+  margin-top: 0;
 }
 .services__content {
   padding: 1rem;
@@ -10945,12 +11005,17 @@ textarea.form-control-lg {
   padding: 0;
   background: linear-gradient(to right, rgba(34, 20, 114, 0.95), rgba(99, 102, 243, 0.95));
 }
+.testimonials .container h1 {
+  margin-top: 1.5rem;
+}
 .testimonials__card {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 2rem 1.25rem;
   border-radius: 0.625rem;
   height: auto;
   text-align: center;
+  width: 95%;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .testimonials__card {

@@ -4,6 +4,14 @@
     position: relative;
     padding: 1rem 0;
 
+    .container {
+        .row {
+            @include media-breakpoint-up(xs) {
+                margin-top: 0;
+            }
+        }
+    }
+
     &__content {
         padding: 1rem;
         margin-top: 0rem;
