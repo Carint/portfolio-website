@@ -10835,8 +10835,17 @@ textarea.form-control-lg {
 }
 
 .border-right {
-  border-right: 0.1rem solid #dee2e6;
-  height: 100%;
+  border-right: 0;
+}
+@media (min-width: 576px) {
+  .border-right {
+    border-right: 0.1rem solid #dee2e6;
+    height: 100%;
+  }
+}
+
+.gradient {
+  background: linear-gradient(to right, rgba(34, 20, 114, 0.95), rgba(99, 102, 243, 0.95));
 }
 
 .companies {
@@ -10861,6 +10870,41 @@ textarea.form-control-lg {
 
 .faq .container h1 {
   margin-top: 1.5rem;
+}
+
+.get-started {
+  padding: 4rem 0;
+  background-color: #e9ecef;
+}
+
+.cta-info {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+.cta-info__list {
+  position: relative;
+  list-style-type: none;
+  display: block;
+  padding: 0.5rem 0 0.7rem 0.5rem;
+}
+.cta-info__list li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.form {
+  padding: 3rem;
+}
+.form button {
+  border: none;
+  color: #fff;
+}
+.form button a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .intro-section {
